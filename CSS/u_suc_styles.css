@@ -89,3 +89,8 @@ article{
     border-color: #659BEA;
     background-color: #B1CAF0;
 }
+.foot{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgb(108, 113, 154);
+}
