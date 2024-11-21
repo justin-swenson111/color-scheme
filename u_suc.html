@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/u_suc_styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>U Suc</h1>
+        <h2>High quality vaccum cleaners</h2>
+    </header>
+    <nav>
+        <a href="#">About Us</a>
+        <a href="#">Browse</a>
+        <a href="#">Checkout</a>
+    </nav>
+    <div class="Grouping">
+        <div class="information">
+            <section>
+                <h3>Why we're the best</h3>
+               <article>
+                    <img src="https://pngimg.com/d/vacuum_cleaner_PNG23.png" alt="" class="image">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Est maiores neque voluptatem, debitis accusamus hic consequuntur in consectetur nam beatae optio perspiciatis deserunt dolor voluptates rem quo quis esse. Quibusdam.
+                    </p>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere veritatis eligendi incidunt nisi explicabo impedit, nihil consequuntur at rerum qui eveniet hic, possimus quod beatae. Autem placeat odit eos facilis.
+                    </p>
+ 
+                </article>
+            </section>
+            <section>
+                <h3>U can Suc better with our productcs</h3>
+                <article>
+                    <img src="https://www.pngall.com/wp-content/uploads/3/Vacuum-Cleaner-PNG-Transparent-HD-Photo.png" alt="" class="image">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus aspernatur ut minima quaerat accusantium nemo, aut voluptatibus tempora ab autem ullam exercitationem sunt sit esse in hic iusto explicabo! Sequi!
+                    </p>
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima dignissimos eos expedita rem, quaerat nihil ratione aliquid eveniet voluptas quo debitis, animi, velit deleniti consequuntur est. Iste qui quisquam suscipit?
+                    </p>
+                </article>
+            </section>
+            <section>
+                <h3>Popular items:</h3>
+                <article>
+                    <img src="https://png.pngtree.com/png-vector/20240202/ourmid/pngtree-vacuum-cleaner-electronic-device-3d-illustration-png-image_11589063.png" alt="" class="image">
+                    <p id="vac1">Red vacuum $700</p>
+                    <br><br><br>
+                    <img src="https://www.pngmart.com/files/15/Commercial-Floor-Vacuum-Cleaner-Transparent-Background.png" alt="" class="image">
+                    <p id="vac2">Blue vacuum $850</p>
+                    <br><br><br>
+                    <img src="https://pngimg.com/d/robot_vacuum_PNG29.png" alt="" class="image">
+                    <p id="vac3">Robot vacuum $2573</p>
+                    <button id="rnd" class="rnd" onclick="randomPrice()">Market Price: Update to current cost</button>
+                    <br><br>
+                </article>
+            </section>
+        </div>
+
+        <div class="Reviews">
+            <section>
+                <h3>Reviews</h3>
+                <article>
+                    <div>★ ★ ★ ★ ★</div>
+                    <div>
+                        <p>These vacuum cleaners are so good! My house has never been cleaner!</p>
+                    </div>
+                    <div>★ ★ ★ ★ ☆</div>
+                    <div>
+                        <p>I got all my friends and family one so we can all Suc!</p>
+                    </div>
+                    <div>★ ☆ ☆ ☆ ☆</div>
+                    <div>
+                        <p>I DONT SUCK!! YOU SUCK!</p>
+                    </div>
+                    <div class="snark">
+                        Response from owner:
+                        <div class="snark">U Suc</div>
+                    </div>
+                </article>
+            </section>
+        </div>
+    </div>
+    <footer>
+
+    </footer>
+</body>
+<script>
+    rnd=document.getElementById("rnd")
+    vac1=document.getElementById("vac1")
+    vac2=document.getElementById("vac2")
+    vac3=document.getElementById("vac3")
+
+    var rndNum=0
+    var vac1Min=0
+    var vac2Min=0
+    var vac3Min=0
+
+    function randomPrice(){
+        console.log(vac3Min)
+
+
+        rndNum = Math.floor(Math.random()*1000)+vac1Min
+        if(vac1Min<rndNum){
+        vac1Min=rndNum
+        }
+        vac1.innerHTML = "Red vacuum $" + rndNum
+
+        rndNum = Math.floor(Math.random()*2000)+vac2Min
+        if(vac2Min<rndNum){
+        vac2Min=rndNum
+        }
+        vac2.innerHTML = "Blue vacuum $" + rndNum
+
+        rndNum = Math.floor(Math.random()*3000)+vac3Min
+        if(vac3Min<rndNum){
+            vac3Min=rndNum
+        }
+        vac3.innerHTML = "Robot vacuum $" + rndNum
+        
+    }
+</script>
+</html>
