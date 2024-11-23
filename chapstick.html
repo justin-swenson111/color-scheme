@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/chapstick.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Chapstick!</h1>
+        
+        <h2>Chapstick?</h2>
+    </header>
+    <nav>
+        <a href="">Chapstick‽</a>
+        <a href="">Chapstick⸮</a>
+        <a href="">Chapstick⸘</a>
+    </nav>
+    <main>
+        <section >
+            <article>
+                <h3>About us</h3>
+                <p>Chapstick.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad tempore aspernatur fugiat laborum consequatur ducimus modi, id facilis cupiditate aperiam sapiente quisquam reprehenderit harum aut quis! Odio, harum. Iste quis error dolore modi, reprehenderit adipisci, fuga possimus nam, odit exercitationem inventore accusantium corporis omnis unde ipsa commodi quidem dolorum. Perspiciatis!</p>
+            </article>
+
+        </section>
+        <section>
+            <article>
+                <h3>Our quality</h3>
+                <p>Chapstick</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam iusto odio laudantium non, iste aliquam quidem, tempora a est eius esse at reiciendis tempore nam quod nihil sequi deleniti ab adipisci! Aut, quis ducimus maxime officia corporis cumque recusandae voluptatibus perspiciatis tempora vero ut veritatis laudantium amet deleniti veniam consectetur.</p>
+            </article>
+        </section>
+        <section class="imgGallery">
+            <img src="https://i5.walmartimages.com/asr/95810623-af6c-41c6-8d7f-03f4226a123a.a0322847d0192354cdf71ac6f6a49d86.png?odnHeight=768&odnWidth=768&odnBg=FFFFFF" alt="" id="img1" >
+        </section>
+        <section>
+            <h3 class="makeBig">Raving Reviews</h3>
+            <article>
+                <h3>★ ★ ☆ ☆ ☆</h3>
+                <p>I mean its chapstick, but like its nothing special</p>
+                <div class="owner">
+                    <p>Response from Owner:</p>
+                    <div class="owner">
+                        <p>(it's) Thanks, it is chapstick, but you will be banned from buying from Chapstick! ever again because you rated us below 5 stars</p>          
+                    </div>
+                </div>
+            </article>
+
+        </section>
+    </main>
+</body>
+<script>
+    img1=document.getElementById("img1")
+    img2=document.getElementById("img2")
+    img3=document.getElementById("img3")
+
+    img1.classList.toggle("fade")
+
+    imgSrc=[img1.src,"https://www.chapstick.com/cdn/shop/files/lipbalmclassic_1445x.png?v=1713437482","https://www.chapstick.com/cdn/shop/files/Classic_Spearmint_12ct__81480.1628708840_1000x.png?v=1710503735"]
+
+    currentImage=1
+
+    setInterval(function(){
+        if (currentImage==1){
+            img1.classList.remove("fade")
+            img1.classList.add("fadein")
+            img1.src=imgSrc[0]
+            setTimeout(function(){
+                img1.classList.remove("fadein")
+                img1.classList.add("fade")
+            },1000)
+            currentImage++
+
+
+
+        }
+        else if (currentImage==2){
+            img1.classList.remove("fade")
+            img1.classList.add("fadein")
+            img1.src=imgSrc[1]
+            currentImage++
+
+            setTimeout(function(){
+                img1.classList.remove("fadein")
+                img1.classList.add("fade")
+            },1000)
+
+        }
+        else{
+            img1.classList.remove("fade")
+            img1.classList.add("fadein")
+            img1.src=imgSrc[2]
+            currentImage=1
+
+            setTimeout(function(){
+                img1.classList.remove("fadein")
+                img1.classList.add("fade")
+            },1000)
+
+        }
+    },2000)
+</script>
+</html>

@@ -1,0 +1,92 @@
+*{
+    z-index: 1;
+}
+body{
+background-image: linear-gradient(to bottom right, #249756c4, #2f8e98,#3669F5 );
+background:linear-gradient();
+}
+header{
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 25px;
+}
+nav{
+    width: 100%;
+    display: flex;
+    background-color: #37DADB;
+    justify-content: center;
+    padding: 1rem;
+    position: sticky;
+    top: 0px;
+    padding: 1rem;
+    border: 3px black solid;
+    z-index: 2;
+}
+a{
+    text-decoration: none;
+    font-size: x-large;
+    color: black;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    padding: 1rem;
+    border: 3px black solid;
+    border-radius: 15%;
+}
+article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: xx-large;
+    border: solid 5px black;
+    border-radius: 10%;
+    background-image: linear-gradient(to bottom right,#38a578a4,#6594DB);
+    margin-top: 10rem;
+    padding: 2rem;
+}
+section{
+    width: 50rem;
+    margin: auto;
+
+}
+.makeBig{
+    font-size: xx-large;
+}
+.owner{
+    margin-left: 6rem;
+}
+img{
+    width: 100px;
+    height: 150px;
+}
+.imgGallery{
+    display: flex;
+    justify-content: center;
+}
+
+.fade{
+    animation: fading 1s forwards;
+}
+.fadein{
+    animation: fadingIn 1s forwards;
+}
+@keyframes fading {
+    0%{
+        opacity: 100%;
+    }
+
+    100%{
+        opacity: 0%;
+    }
+}
+@keyframes fadingIn {
+    0%{
+        opacity: 0%;
+    }
+
+    100%{
+        opacity: 100%;
+    }
+}
