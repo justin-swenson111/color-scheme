@@ -76,7 +76,6 @@ img{
 .foot{
     display: flex;
     justify-content: space-evenly;
-    background-color: rgb(108, 113, 154);
 }
 @keyframes hovering {
     0%{
@@ -99,5 +98,7 @@ footer{
     justify-content: center;
     margin: 0;
     padding: 0 ;
+    background-color: rgb(108, 113, 154);
+
 }
 
