@@ -28,8 +28,8 @@ nav{
     border: solid 5px #659BEA;
 }
 a{
-    margin: 10px 100px 10px 100px;
-    padding: 1rem 1.5em 1rem 1.5em;
+    margin: 10px 50px 10px 50px;
+    padding: 1rem 1.5rem 1rem 1.5rem;
     border: solid black 5px;
     border-radius: 35%;
     font-size: x-large;
@@ -43,7 +43,6 @@ a:hover{
     
 }
 section{
-
     font-size: xx-large;
 }
 article{

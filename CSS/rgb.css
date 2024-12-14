@@ -8,7 +8,7 @@ main{
     display: flex;
 }
 .content{
-    width: 70%;
+    width: 100%;
 }
 header{
     width: auto;
@@ -52,7 +52,7 @@ article{
     padding: 2rem;
 }
 section{
-    width: 45%;
+    width: 75%;
     margin: auto;
 
 }
@@ -72,6 +72,8 @@ img{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    width: 35rem;
+    margin: 0;
 }
 .foot{
     display: flex;
